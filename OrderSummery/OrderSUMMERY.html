@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrderSummery</title>
+    <link rel="stylesheet" href="./Ordersummery.css">
+        
+        
+</head>
+<body>
+    <div class="Order_summery_contener">
+        <form action="">
+       <div class="Ordersummary_steps">
+            <div class="ordersummary_login">
+                <h3>1 Signin or login</h3>
+                <hr>
+                <div class="ordersummary_email">
+                        <input type="text" id="emailorphone" placeholder="Enter email/phone no">
+                        <span>By continuing, you agree to Our Terms of Use.</span>
+                        <button id="step1_cont" onclick=" displaystep2()">Continue</button>
+                  
+                </div>
+            </div>
+            <div class="ordersummary_delivery_address">
+                <h3>2 Delivery Address</h3>
+                <hr>
+                <div class="delivery_address_details">
+                       <button id="address_location">use my current location</button>
+                      <div>
+                        <input type="text" name="Name" id="Name"  placeholder="Name">
+                        <input type="number" name=" mobil" id=" mobil" placeholder="10-digit mobile number">
+                      </div>
+                       <div>
+                        <input type="number" name="Pincode" id="Pincode" placeholder="Pincode">
+                        <input type="text" name="Locality" id="Locality" placeholder="Locality">
+                       </div>
+                       <div>
+                        <input type="text" name="address" id="address" placeholder="ADDRESS(Area and Street)">
+                       </div>
+                      <div>
+                        <input type="text" name="city" id="city" placeholder="City">
+                        <input type="text" name="state" id="state" placeholder="state">
+                      </div>
+                      <div>
+                        <input type="text" name="landmark" id="landmark" placeholder="enter your land mark(optional)">
+                        <input type="text" name="altmobile" id="altmobile" placeholder="alternative mobile no(optional)">
+                       
+                      </div>
+                       <p>Address type</p>
+                      <div class="delivery_place">
+                        <input type="radio" name="addres_" id="address_home">
+                        <label for="address_home">Home(All day delivery)</label>
+                        <input type="radio" name="addres_" id="address_work">
+                        <label for="address_work">Work(delivery only on working days)</label>
+                       </div>
+                       <hr>
+                       <button id="save_adress">SAVE</button>
+                       <button id="add_address">+ Add address </button>
+                </div>
+            </div>
+            <div class="ordersummary_detail">
+                <h3>3 Order Detail</h3>
+                <hr>
+            </div>
+            <div class="ordersummary_paymentoption">
+                <h3>4 Payment Options</h3>
+                <hr>
+                <div class="peyment_method">
+                 <div>
+                  <input type="radio" name="payment_" id="payon_delivery">
+                  <label for="payon_delivery">Pay on delivery</label>
+                 </div>
+                 <div>
+                  <input type="radio" name="payment_" id="credit_card">
+                  <label for="credit_card">debit/credit card</label>
+                 </div>
+                 </div>
+                 <input type="submit" name="order" id="sumbit_order" >
+            </div>
+       </div>
+    </form>
+    </div>
+  
+    <script type="text/javascript" src="./Ordersummery.js"></script>
+</body>
+</html>

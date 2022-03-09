@@ -2,23 +2,23 @@
 common css
 ********************************* */
 @import url("https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap");
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  
 }
-.admin_body_container{
-  margin-left: 250px;
+.admin_body_container {
+  margin-left: 300px;
   margin-top: 60px;
   padding: 0.5rem;
+  background-color: rgb(0, 0, 0);
 }
 h1 {
   font-family: "Supermercado One", cursive;
-  color: rgb(4, 4, 68);
+  color: white;
 }
 .notice {
   color: rgb(71, 70, 70);
@@ -59,10 +59,10 @@ adminchart
   margin: 10px;
   height: 100px;
   width: 150px;
-  background-color: rgb(10, 10, 83);
+  background-color: #1d1d1d;
   color: white;
   padding: 10px;
-  box-shadow: 10px 10px 10px black;
+  box-shadow: 10px 10px 10px rgb(49, 49, 49);
   text-align: center;
 }
 .chart1 {
@@ -89,7 +89,7 @@ Product Page
   display: flex;
   flex-direction: row;
   background-color: rgb(177, 176, 204);
-  width: 800px;
+  width: 100hw;
   border: 5px solid gray;
   box-shadow: 10px 10px 30px black;
 }
@@ -240,9 +240,12 @@ td {
 }
 
 @media only screen and (max-width: 768px) {
-  
-  .admin_body_container{
+  .admin_body_container {
     margin-left: 0;
+  }
+  .product-container {
+    display: flex;
+    flex-direction: column;
   }
   .brand-form {
     width: 350px;
@@ -264,18 +267,16 @@ td {
   .chart2 {
     width: 300px;
   }
-  table{
+  table {
     width: 100vw;
     margin: 0;
-
   }
-  .user_table_container{
+  .user_table_container {
     overflow-x: scroll;
   }
-  .address_col{
+  .address_col {
     display: none;
   }
-  
 }
 @media only screen and (min-width: 769px) {
   .dashbord-container {
